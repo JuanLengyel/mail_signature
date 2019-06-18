@@ -20,45 +20,36 @@ body {
 #main-information {
     display: grid;
 
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 46% 50%;
 }
 
 #main-brief {
-    display: grid;
-    background-color: rgb(6, 33, 54);
-
-    grid-template-columns: 10% 90%;
+    display: inline;
 }
 
 #portrait {
-    position: absolute;
+    position: inline;
     margin-left: 25px;
-    margin-top: -5px;
 
     height: 80px;
 
     border-radius: 100%;
-
-    border: 4px solid rgb(6, 33, 54);
 }
 
-#main-brief p {
-    position: relative;
+#name {
+    position: inline;
 
     font-size: 12pt;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     font-weight: bold;
 
-    margin-left: 80px;
+    margin-left: 20px;
 }
 
 #social-links {
-    display: grid;
+    display: inline;
     position: relative;
-    
-    width: 150px;
-    height: 40px;
 
     grid-template-columns: 25px 25px 25px;
     column-gap: 30px;
@@ -77,8 +68,6 @@ body {
 
 #main-detail {
     height: fit-content;
-
-    border-right: 10px solid rgb(6, 33, 54);
 }
 
 #main-detail p {
