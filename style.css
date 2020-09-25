@@ -1,0 +1,80 @@
+body {
+  max-width: 480px;
+  padding: 8px;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+
+  grid-template-areas: 
+  "photo information"
+  "photo links";
+}
+
+.photo-container {
+  grid-area: photo;
+}
+
+.photo-container > img {
+  max-width: 90%;
+  border-radius: 100%;
+  justify-items: center;
+  align-items: center;
+
+  border: 3px double black;
+}
+
+.main-information {
+  grid-area: information;
+  padding-left: 10px;
+  border-left: 4px solid rgb(30, 73, 122);
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fullname {
+  font-size: large;
+  font-weight: bold;
+}
+
+.misc-info a {
+  text-decoration: dotted;
+}
+
+.misc-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.social-links {
+  grid-area: links;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 4px;
+}
+
+.social-links > div {
+  justify-items: center;
+  justify-items: center;
+}
+
+.social-links svg {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+#LinkedIn {
+  fill: rgb(0, 119, 180);
+}
+#Github {
+  fill: rgb(0, 0, 0);
+}
+#Twitter {
+  fill: rgb(29, 161, 243);
+}
+#Facebook {
+  fill: rgb(72, 103, 170);
+}
